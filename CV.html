@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Profesional - Rafael Emmanuel Ramirez Flores</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#e5e7eb;
+    padding:40px;
+}
+
+.cv{
+    max-width:1100px;
+    margin:auto;
+    background:white;
+    display:flex;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* IZQUIERDA */
+
+.left{
+    width:35%;
+    background:linear-gradient(180deg,#0f172a,#1e293b);
+    color:white;
+    padding:35px;
+}
+
+.profile{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.profile img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    object-fit:cover;
+}
+
+.profile h1{
+    font-size:28px;
+    margin-top:20px;
+}
+
+.profile h3{
+    color:#38bdf8;
+    margin-top:10px;
+    font-weight:normal;
+}
+
+.section{
+    margin-top:35px;
+}
+
+.section h2{
+    font-size:22px;
+    margin-bottom:15px;
+    color:#38bdf8;
+    border-bottom:2px solid #38bdf8;
+    padding-bottom:5px;
+}
+
+.contact p{
+    margin:12px 0;
+    line-height:1.6;
+}
+
+.skill{
+    background:#334155;
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+
+.skill:hover{
+    background:#38bdf8;
+    transform:translateX(5px);
+}
+
+/* DERECHA */
+
+.right{
+    width:65%;
+    padding:40px;
+}
+
+.right h2{
+    color:#0f172a;
+    margin-bottom:15px;
+    border-left:6px solid #38bdf8;
+    padding-left:10px;
+    font-size:28px;
+}
+
+.about{
+    line-height:1.9;
+    color:#444;
+    margin-bottom:35px;
+    text-align:justify;
+}
+
+.job{
+    margin-bottom:35px;
+}
+
+.job h3{
+    color:#2563eb;
+    font-size:24px;
+}
+
+.job span{
+    color:gray;
+    font-size:14px;
+}
+
+.job ul{
+    margin-top:15px;
+    margin-left:25px;
+}
+
+.job li{
+    margin-bottom:10px;
+    line-height:1.7;
+}
+
+.education{
+    background:#f8fafc;
+    padding:20px;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+.education p{
+    margin:10px 0;
+    line-height:1.6;
+}
+
+.frameworks{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:20px;
+}
+
+.box{
+    background:#0f172a;
+    color:white;
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.box:hover{
+    background:#38bdf8;
+    transform:scale(1.05);
+}
+
+.highlight{
+    color:#2563eb;
+    font-weight:bold;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .cv{
+        flex-direction:column;
+    }
+
+    .left,
+    .right{
+        width:100%;
+    }
+
+    .frameworks{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="cv">
+
+    <!-- LADO IZQUIERDO -->
+    <div class="left">
+
+        <div class="profile">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+            <h1>Rafael Emmanuel Ramirez Flores</h1>
+
+            <h3>Ingeniería en Sistemas</h3>
+
+        </div>
+
+        <div class="section contact">
+
+            <h2>Contacto</h2>
+
+            <p>📞 3320526846</p>
+            <p>📧 rjeff8205@gmail.com</p>
+            <p>📍 Guadalajara, Jalisco</p>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Habilidades</h2>
+
+            <div class="skill">Excel Avanzado</div>
+            <div class="skill">HTML, CSS y JavaScript</div>
+            <div class="skill">jQuery y Frameworks</div>
+            <div class="skill">Resolución de problemas</div>
+            <div class="skill">Trabajo en equipo</div>
+            <div class="skill">Aprendizaje rápido</div>
+            <div class="skill">Inglés básico</div>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Tecnologías</h2>
+
+            <div class="frameworks">
+
+                <div class="box">HTML5</div>
+                <div class="box">CSS3</div>
+                <div class="box">JavaScript</div>
+                <div class="box">jQuery</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- LADO DERECHO -->
+
+    <div class="right">
+
+        <h2>Sobre Mí</h2>
+
+        <p class="about">
+            Estudiante de Ingeniería en Sistemas con experiencia en el sector industrial
+            y conocimientos en tecnologías web. Actualmente me desempeño como
+            <span class="highlight">Operador Nivel 5 en Molex</span>,
+            donde he desarrollado habilidades técnicas, trabajo en equipo y solución
+            de problemas en procesos de manufactura electrónica.
+            <br><br>
+            También cuento con conocimientos en desarrollo frontend implementando
+            tecnologías como <span class="highlight">JavaScript y jQuery</span>,
+            enfocándome en crear interfaces dinámicas y funcionales.
+            Me considero una persona responsable, comprometida y orientada a la mejora continua.
+        </p>
+
+        <h2>Experiencia Laboral</h2>
+
+        <div class="job">
+
+            <h3>Molex - Operador Nivel 5</h3>
+            <span>Octubre 2023 - Actualidad</span>
+
+            <ul>
+                <li>Operación, ajuste y supervisión de maquinaria industrial.</li>
+
+                <li>Participación en procesos de manufactura electrónica y control de calidad.</li>
+
+                <li>Implementación y soporte en proyecto SOE.</li>
+
+                <li>Identificación y solución de fallas operativas.</li>
+
+                <li>Manejo de sistemas computacionales para monitoreo de producción.</li>
+
+                <li>Trabajo colaborativo con áreas de ingeniería y producción.</li>
+
+            </ul>
+
+        </div>
+
+        <div class="job">
+
+            <h3>Wire Bond (WB)</h3>
+
+            <ul>
+                <li>Operación de máquinas de soldadura mediante hilo de oro.</li>
+
+                <li>Configuración y calibración de capilar.</li>
+
+                <li>Ajuste de parámetros y programas de producción.</li>
+
+                <li>Corrección de errores de alineación y cableado.</li>
+
+            </ul>
+
+        </div>
+
+        <div class="job">
+
+            <h3>Beam Profile</h3>
+
+            <ul>
+                <li>Validación óptica y alineación de lentes.</li>
+
+                <li>Verificación de coordenadas y parámetros de medición.</li>
+
+                <li>Corrección de desviaciones para aprobación de procesos.</li>
+
+            </ul>
+
+        </div>
+
+        <h2>Educación</h2>
+
+        <div class="education">
+
+            <p><strong>Ingeniería en Sistemas</strong></p>
+            <p>2023 - Actualidad</p>
+            <p>Finalización estimada: Agosto 2026</p>
+
+            <br>
+
+            <p><strong>CECyTEC 21 Chulavista</strong></p>
+            <p>Carrera Técnica en Ventas</p>
+
+            <br>
+
+            <p>
+                🏆 Primer lugar en el proyecto
+                <strong>Talent College UTEG 2025</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
